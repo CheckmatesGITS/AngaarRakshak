@@ -1,0 +1,213 @@
+/* DASHBOARD */
+#dashboard{
+    display: flex;
+    background: #e9e9e9;
+    /* width: 100vw; */
+}
+
+/* <--- Main Content ---> */
+.mainContent{
+    position: relative;
+    background: #ebe9e9;
+    width: 100%;
+    padding: 1rem;
+}
+
+.mainContent .headerWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 2rem;
+    margin-bottom: 1rem;
+}
+
+.headerWrapper .headerTitle{
+    color: #00214d;
+}
+
+.headerWrapper .userInfo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.userInfo .searchBox{
+    background: rgb(237, 237, 237);
+    border-radius: 15px;
+    color: rgba(113, 99, 186, 255);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 12px;
+}
+
+.searchBox input{
+    background: transparent;
+    border: none;
+    padding: 10px;
+}
+
+.searchBox i{
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all ease 0.5s
+}
+
+.searchBox i:hover{
+    transform: scale(1.2);
+}
+
+.headerWrapper .userInfo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* <--- Card Container ---> */
+.mainContent .cardContainer{
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 2rem;
+    margin-bottom: 1rem;
+}
+
+.cardContainer .cardWrapper{
+    display: flex;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+
+.cardWrapper .card{
+    background: #ebe9e9;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.card .cardHeader{
+    font-size: 12px;
+    text-align: right;
+}
+
+.card .cardBtn{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card .cardBtn a{
+    background: #0a6891;
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+
+
+
+/* <--- Train Info ---> */
+.mainContent .trainInfo{
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    padding: 10px 2rem;
+    margin-bottom: 1rem;
+}
+
+.trainInfo .infoContainer{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+
+.trainInfo .trainForm{
+    width: 30%;
+    padding: 10px 20px;
+    background: #ebe9e9;
+    border-radius: 10px;
+}
+
+.trainInfo .trainForm form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.trainForm form input{
+    background: white;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 10px;
+    color: #000;
+    text-align: center;
+}
+
+.trainForm form input::placeholder{
+    color: #000;
+}
+
+.trainForm form button{
+    border: none;
+    background: #0a6891;
+    padding: 8px 30px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.trainInfo .trainDet{
+    background: #e9e9e9;
+    width: 70%;
+    height: 100%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.trainDet .details{
+    width: 80%;
+    margin: auto;
+    padding: 10px 30px;
+    background: #fff;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 3fr 0fr 3fr 3fr;
+    grid-template-rows: 7fr 3fr;
+}
+.details .align:nth-child(1){
+    grid-row: 1 /span 2;
+    grid-column: 1;
+}
+
+.details .seperator{
+    border: 2px solid #a6a3a3;
+    border-radius: 6px;
+    grid-column: 2;
+    grid-row: 1 /span 2;
+}
+
+.details .seperator+.align{
+    grid-column: 3 /span 4;
+    grid-row: 1;
+    margin-left: 1rem;
+}
+
+.details .checkBtn{
+    background: #0a6891;
+    padding: 4px;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    grid-column: 4;
+    grid-row: 2;
+}
