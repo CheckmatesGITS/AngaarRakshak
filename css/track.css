@@ -1,0 +1,165 @@
+/* TRACK TRAIN */
+#track{
+    display: flex;
+    background: #e9e9e9
+}
+
+/* <--- Main Content ---> */
+.mainContent{
+    position: relative;
+    background: #ebe9e9;
+    width: 100%;
+    padding: 1rem;
+}
+
+.mainContent .headerWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 2rem;
+    margin-bottom: 1rem;
+}
+
+.headerWrapper .headerTitle{
+    color: #00214d;
+}
+
+.headerWrapper .userInfo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.userInfo .searchBox{
+    background: rgb(237, 237, 237);
+    border-radius: 15px;
+    color: rgba(113, 99, 186, 255);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 12px;
+}
+
+.searchBox input{
+    background: transparent;
+    border: none;
+    padding: 10px;
+}
+
+.searchBox i{
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all ease 0.5s
+}
+
+.searchBox i:hover{
+    transform: scale(1.2);
+}
+
+.headerWrapper .userInfo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* <--- Tracking Info ---> */
+.mainContent .track{
+    background: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 30px;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.track .trackHeader{
+    width: 40%;
+    margin: 1rem auto;
+}
+
+.track .trackHeader span{
+    border: 1px solid #00214d;
+    display: block;
+    width: 100%;
+}
+
+.track .trackContent{
+    display: flex;
+}
+
+.track .trackContent .info{
+    flex-basis: 50%;
+}
+
+.track .trackContent .info .trackDet{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.track .trackContent .info .trackDet select{
+    padding: 6px;
+    font-size: 16px;
+    border-radius: 2em;
+}
+
+.track .trackContent .map{
+    flex-basis: 50%;
+    height: 400px;
+    text-align: center;
+    /* background: #999; */
+    border-radius: 2em;
+    display: flex;
+    place-content: center;
+    place-items: center;
+}
+
+.track .trackContent .map iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 2em;
+    transition: all ease 0.5s;
+}
+
+/* Status Info */
+.mainContent .trainStat{
+    background: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 30px;
+    position: relative;
+}
+
+.trainStat .statHeader{
+    width: 40%;
+    margin: 1rem auto;
+}
+
+.trainStat .statHeader span{
+    border: 1px solid #00214d;
+    display: block;
+    width: 100%;
+}
+
+.trainStat #statImg{
+    padding: 2rem;
+    background: rgba(0, 72, 77, 0.573);
+    border-radius: 2em;
+    overflow-x: hidden;
+    display: flex;
+}
+
+.trainStat #statImg .engine{
+    width: 150px;
+    transform: scaleX(-1);
+}
+.trainStat #statImg img{
+    width: 150px;
+    filter: drop-shadow(0px 0px 12px black);
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRACK : ANGAAR RAKSHAK</title>
+
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/track.css">
+    <link rel="stylesheet" href="css/sideMenu.css">
+
+    <!-- Remix Logo CSS File -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Google Font API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <section id="track">
+
+        <div class="sideMenu">
+            <div class="logo"></div>
+            <ul class="menu">
+                <li>
+                    <a href="/dashboard.html">
+                        <i class="ri-dashboard-line"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/profile.html">
+                        <i class="ri-user-3-line"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="/track.html">
+                        <i class="ri-map-pin-line"></i>
+                        <span>TrackTrain</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/alert.html">
+                        <i class="ri-alert-line"></i>
+                        <span>Alerts</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="ri-settings-3-line"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li class="logout">
+                    <a href="#">
+                        <i class="ri-logout-box-r-line"></i>
+                        <span>Logout</span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="mainContent">
+
+            <div class="headerWrapper">
+                <div class="headerTitle">
+                    <span>TrackTrain</span>
+                    <h2>Dashboard</h2>
+                </div>
+                <div class="userInfo">
+                    <div class="searchBox">
+                        <i class="ri-search-line"></i>
+                        <input type="text" placeholder="Search">
+                    </div>
+                    <a href="/profile.html">
+                        <img src="/img/user.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="track">
+                <div class="trackHeader">
+                    <h1 class="center">Tracking Train Information</h1>
+                    <span></span>
+                </div>
+                <div class="trackContent">
+                    <div class="info">
+                        <div class="trackDet">
+                            <p>
+                                <label for="trainId">Train_ID : </label>
+                                <!-- <select onchange="write()" name="trainId" id="idOption">
+                                    <option value="none">SELECT TRAIN ID</option>
+                                    <option value="35">18982</option>
+                                    <option value="29">19728</option>
+                                    <option value="45">18720</option> -->
+                                </select> <!--<span></span>--></p>
+                            <p>Date : <span id="trainDate"></span></p>
+                            <p>Running Between : <span id="runningFrom"></span> to <span id="runningTo"></span></p>
+                            <p>Current Location : <span id="trainLocation"></span></p>
+                            <p>Status : <span id="trainStatus"></span></p>
+                            <p>Number Of Boggie : <span id="boggieNum"></span></p>
+                        </div>
+                    </div>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1807535.7206915277!2d75.18909272514675!3d27.768397357129476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x396c4adf4c57e281%3A0xce1c63a0cf22e09!2sjaipur!3m2!1d26.9124336!2d75.7872709!4m5!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sdelhi!3m2!1d28.7040592!2d77.10249019999999!5e0!3m2!1sen!2sin!4v1695316994058!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trainStat">
+                <div class="statHeader">
+                    <h1 class="center">Tracking Train Information</h1>
+                    <span></span>
+                </div>
+
+                <div id="statImg">
+                    <img src="/img/status/engine.png" alt="" class="engine">
+                    <img src="/img/status/gBoggie.png" alt="">
+                    <img src="/img/status/rBoggie.png" alt="">
+                    <img src="/img/status/yBoggie.png" alt="">
+                    <img src="/img/status/gBoggie.png" alt="">
+                    <img src="/img/status/gBoggie.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="./js/boggie.js"></script>
+</body>
+
+</html>
