@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+*::selection{
+    color: aliceblue;
+    background: #0b141f;
+}
+
+a {
+    text-decoration: none;
+}
+
+input{
+    outline: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.divider{
+    border: 1px solid #555;
+    margin: 1rem auto;
+}

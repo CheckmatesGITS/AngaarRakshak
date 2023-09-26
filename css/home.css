@@ -1,0 +1,307 @@
+#home:before{
+    content: '';
+    background: linear-gradient(to bottom, transparent 60%, #1a314e), url(/img/bg.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+#home .container{
+    background: #c7cdc97d;
+    padding: 1rem 2rem;
+    margin: 10vh 0;
+    width: 40%;
+    /* border: 4px solid #3c5750; */
+    border: 4px solid #5aa1d6;
+    border-radius: 2em;
+    backdrop-filter: blur(8px);
+    overflow: hidden;
+}
+
+.container .formButton{
+    margin-top: 1rem;
+    padding: 4px;
+    box-shadow: 0 0 6px 2px black;
+    border-radius: 2em;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.container .formButton button{
+    font-size: 20px;
+}
+
+.formButton #btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, #0a6891 40%, #89c6e1);
+    border-radius: 2em;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+.formButton .toggleBtn{
+    padding: 4px 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.container .formSection{
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    width: 200%;
+    transition: all ease 0.5s;
+    overflow: hidden;
+    /* transform: translateX(-50%); */
+}
+
+.formSection .login{
+    flex-basis: 100%;
+}
+
+.login .loginForm{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.loginForm .inputBox{
+    width: 100%;
+    height: 30px;
+    background: transparent;
+    margin: 30px 0;
+    position: relative;
+}
+
+.loginForm .inputBox input{
+    width: 100%;
+    height: 100%;
+    padding: 4px 8px;
+    background: transparent;
+    border-bottom: solid 2px black;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #000;
+}
+
+.loginForm .inputBox input::placeholder{
+    color: #000;
+    font-size: 1rem;
+}
+
+.loginForm .inputBox input+i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+
+.login .rememberForgot{
+    display: flex;
+    justify-content: space-between;
+}
+
+.login .rememberForgot a{
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.rememberForgot .focusLine{
+    border: 1px solid #333;
+    width: 100%;
+    opacity: 0;
+    transition: all ease 1s;
+}
+.rememberForgot a:hover .focusLine{
+    opacity: 1;
+}
+
+.rememberForgot label{
+    display: flex;
+    align-items: center;
+}
+
+.rememberForgot label input{
+    margin-right: 10px;
+}
+
+.rememberForgot label input:checked{
+    background: #1a314e;
+}
+
+.loginForm .logBtn{
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin: 20px 0;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+    transition: all ease 0.5s;
+}
+
+.loginForm .logBtn:hover{
+    box-shadow: 0 0 6px 2px black;
+    transform: scale(1.01);
+}
+
+.loginForm .registerLink{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.loginForm .registerLink p a{
+    color: #000;
+    font-weight: bolder;
+}
+
+.loginForm .registerLink p a{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.registerLink p a .focusLine{
+    border: 1px solid #333;
+    width: 100%;
+    opacity: 0;
+    transition: all ease 1s;
+}
+.registerLink p a:hover .focusLine{
+    opacity: 1;
+}
+
+
+
+    
+
+
+.formSection .signIn{
+    flex-basis: 100%;
+    padding: 10px;
+}
+
+.signIn .signForm{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+} 
+
+.signForm .inputBox{
+    width: 100%;
+    height: 30px;
+    background: transparent;
+    margin: 20px 0;
+    position: relative;
+}
+
+.signForm .inputBox input{
+    width: 100%;
+    height: 100%;
+    padding: 4px 8px;
+    background: transparent;
+    border-bottom: solid 2px black;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #000;
+}
+
+.signForm .inputBox input::placeholder{
+    color: #000;
+    font-size: 1rem;
+}
+
+.signForm .inputBox input+i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+
+.signForm .logBtn{
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin: 20px 0;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+    transition: all ease 0.5s;
+}
+
+.signForm .logBtn:hover{
+    box-shadow: 0 0 6px 2px black;
+    transform: scale(1.01);
+}
+
+.signForm .tnc label{
+    display: inline-flex;
+    align-items: center;
+}
+
+.signForm .tnc label input{
+    margin-right: 10px;
+}
+
+.signForm .tnc label a{
+    margin-left: 10px;
+    color: #000;
+    font-weight: bold;
+}
+
+.tnc a{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.tnc a .focusLine{
+    border: 1px solid #333;
+    width: 100%;
+    opacity: 0;
+    transition: all ease 1s;
+}
+.tnc a:hover .focusLine{
+    opacity: 1;
+}
