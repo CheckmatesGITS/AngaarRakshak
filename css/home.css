@@ -1,6 +1,6 @@
 #home:before{
     content: '';
-    background: linear-gradient(to bottom, transparent 60%, #1a314e), url(img/bg.jpeg);
+    background: linear-gradient(to bottom, transparent 60%, #1a314e), url(./img/bg.jpeg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
