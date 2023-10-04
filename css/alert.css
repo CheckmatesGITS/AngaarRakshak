@@ -66,8 +66,8 @@
     cursor: pointer;
 }
 
-/* <--- Tracking Info ---> */
-.mainContent .track{
+/* <--- Alert Box ---> */
+.mainContent .box{
     background: #fff;
     border: none;
     border-radius: 10px;
@@ -76,67 +76,93 @@
     margin-bottom: 1rem;
 }
 
-.track .trackHeader{
+.box .boxHeader{
     width: 40%;
     margin: 1rem auto;
 }
 
-.track .trackHeader span{
+.box .boxHeader span{
     border: 1px solid #00214d;
     display: block;
     width: 100%;
 }
 
-.track .trackContent{
-    display: flex;
-}
-
-.track .trackContent .info{
-    flex-basis: 50%;
-}
-
-.track .trackContent .info .trackDet{
+.box .boxContent{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    font-size: 20px;
-    font-weight: 600;
+    gap: 2rem;
+    justify-content: center;
 }
 
-.track .trackContent .map{
-    flex-basis: 50%;
-    height: 400px;
-    text-align: center;
-    /* background: #999; */
-    border-radius: 2em;
+.box .boxContent .alertBox{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: 2px solid;
+    border-left: 8px solid;
+    border-radius: 8px;
     display: flex;
-    place-content: center;
-    place-items: center;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4rem;
 }
 
-.track .trackContent .map iframe{
-    width: 100%;
-    height: 100%;
-    border-radius: 2em;
-    transition: all ease 0.5s;
+.box .boxContent .alertBox.warn{
+    border: 2px solid #ef9b0f;
+    border-left: 8px solid #ef9b0f;
 }
 
-/* Status Info */
-.mainContent .trainStat{
-    background: #fff;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 30px;
-    position: relative;
+/* .box .boxContent .alertBox.success{
+    border: 2px solid darkgreen;
+    border-left: 8px solid darkgreen;
+    background: #30cc3473;
 }
 
-.trainStat .statHeader{
-    width: 40%;
-    margin: 1rem auto;
+.box .boxContent .alertBox.warn{
+    border: 2px solid #ef9b0f;
+    border-left: 8px solid #ef9b0f;
+    background: #fff77d94;
 }
 
-.trainStat .statHeader span{
-    border: 1px solid #00214d;
-    display: block;
-    width: 100%;
+.box .boxContent .alertBox.danger{
+    border: 2px solid #b70000;
+    border-left: 8px solid #b70000;
+    background: #e9636469;
+} */
+
+.box .boxContent .alertBox.danger{
+    border: 2px solid #b70000;
+    border-left: 8px solid #b70000;
+}
+.box .boxContent .alertBox.success{
+    border: 2px solid darkgreen;
+    border-left: 8px solid darkgreen;
+}
+
+.box .boxContent .alertBox.warn span{
+    color: #ef9b0f;
+}
+
+.box .boxContent .alertBox.danger span{
+    color: #b70000;
+}
+
+.box .boxContent .alertBox.success span{
+    color: darkgreen;
+}
+
+.box .boxContent .alertBox span i{
+    font-size: 2.5rem;
+}
+
+.box .boxContent .alertBox .head{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.box .boxContent .alertBox .msgContent{
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
 }

@@ -1,0 +1,12 @@
+@media screen and (max-width:600px ) {
+    .box .boxContent .alertBox{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    .box .boxContent .alertBox .msg{
+        text-align: center;
+    }
+}

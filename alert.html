@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/alert.css">
     <link rel="stylesheet" href="css/sideMenu.css">
+    <link rel="stylesheet" href="css/alertBox.css">
 
     <!-- Remix Logo CSS File -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -28,25 +29,25 @@
             <div class="logo"></div>
             <ul class="menu">
                 <li>
-                    <a href="https://checkmatesgits.github.io/AngaarRakshak/dashboard.html">
+                    <a href="/dashboard.html">
                         <i class="ri-dashboard-line"></i>
                         <span>Dashboard</span>
                     </a>
                 </li>
                 <li>
-                    <a href="https://checkmatesgits.github.io/AngaarRakshak/profile.html">
+                    <a href="/profile.html">
                         <i class="ri-user-3-line"></i>
                         <span>Profile</span>
                     </a>
                 </li>
                 <li>
-                    <a href="https://checkmatesgits.github.io/AngaarRakshak/track.html">
+                    <a href="/track.html">
                         <i class="ri-map-pin-line"></i>
                         <span>TrackTrain</span>
                     </a>
                 </li>
                 <li class="active">
-                    <a href="https://checkmatesgits.github.io/AngaarRakshak/alert.html">
+                    <a href="/alert.html">
                         <i class="ri-alert-line"></i>
                         <span>Alerts</span>
                     </a>
@@ -79,22 +80,88 @@
                         <i class="ri-search-line"></i>
                         <input type="text" placeholder="Search">
                     </div>
-                    <a href="https://checkmatesgits.github.io/AngaarRakshak/profile.html">
-                        <img src="img/user.png" alt="">
+                    <a href="/profile.html">
+                        <img src="/img/user.png" alt="">
                     </a>
                 </div>
             </div>
 
-
-            <div class="track">
-                <div class="trackHeader">
+            <div class="box">
+                <div class="boxHeader">
                     <h1 class="center">Alerts About Railway</h1>
                     <span></span>
                 </div>
-                <div class="trackContent">
+                <div class="boxContent">
+                    <div class="alertBox danger">
+                        <span class="alertType">
+                            <i class="ri-close-circle-fill"></i>
+                        </span>
+                        <div class="msg">
+                            <div class="head">
+                                <div>Underloaded</div>
+                            </div>
+                            <div class="msgContent">
+                                <p>Tain Number : <span></span></p>
+                                <p>Wagon Number : <span></span></p>
+                                <p>Location : <span></span></p>
+                            </div>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptas, eveniet excepturi dignissimos unde illum laboriosam sed mollitia pariatur totam.
+                        </div>
+                    </div>
+                    <div class="alertBox danger">
+                        <span class="alertType">
+                            <i class="ri-close-circle-fill"></i>
+                        </span>
+                        <div class="msg">
+                            <div class="head">
+                                <div>Overloaded</div>
+                            </div>
+                            <div class="msgContent">
+                                <p>Tain Number : <span></span></p>
+                                <p>Wagon Number : <span></span></p>
+                                <p>Location : <span></span></p>
+                            </div>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptas, eveniet excepturi dignissimos unde illum laboriosam sed mollitia pariatur totam.
+                        </div>
+                    </div>
+                    <div class="alertBox warn">
+                        <div class="alertType">
+                            <span class="alertImg">
+                                <i class="ri-error-warning-fill"></i>
+                            </span>
+                        </div>
+                        <div class="msg">
+                            <div class="head">
+                                <div>Uneven Weight Distribution</div>
+                            </div>
+                            <div class="msgContent">
+                                <p>Tain Number : <span></span></p>
+                                <p>Wagon Number : <span></span></p>
+                                <p>Location : <span></span></p>
+                            </div>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptas, eveniet excepturi dignissimos unde illum laboriosam sed mollitia pariatur totam.
+                        </div>
+                    </div>
+                    <div class="alertBox warn">
+                        <span class="alertType">
+                            <!-- <i class="ri-checkbox-circle-fill"></i> -->
+                            <i class="ri-error-warning-fill"></i>
+                        </span>
+                        <div class="msg">
+                            <div class="head">
+                                <div>Delayed by 30min</div>
+                            </div>
+                            <div class="msgContent">
+                                <p>Tain Number : <span></span></p>
+                                <p>Wagon Number : <span></span></p>
+                                <p>Location : <span></span></p>
+                            </div>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptas, eveniet excepturi dignissimos unde illum laboriosam sed mollitia pariatur totam.
+                        </div>
+                    </div>
                 </div>
             </div>
-
+            
         </div>
 
     </section>
