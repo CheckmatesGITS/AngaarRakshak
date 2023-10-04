@@ -1,0 +1,47 @@
+/* INDEX.HTML */
+@media screen and (max-width: 600px) and (min-width:500px) {
+    #home .container{
+        width: 80% !important;
+    }
+    .login .rememberForgot {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .signForm .tnc {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #home .container{
+        width: 90%;
+        padding: 1rem;
+    }
+    .container .formButton button {
+        font-size: 15px;
+    }
+    .login .rememberForgot {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .loginForm .inputBox input::placeholder,
+    .signForm .inputBox input::placeholder{
+        color: #000;
+        font-size: 12px;
+    }
+    .signForm .tnc {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 600px) {
+    #home .container{
+        width: 70%;
+        padding: 1rem;
+    }
+}
+/* INDEX.HTML ENDS HERE */
