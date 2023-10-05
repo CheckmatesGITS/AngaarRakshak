@@ -87,7 +87,7 @@
     }
     .userInfo .searchBox{
         padding: 4px 6px;
-        width: 85%;
+        width: 90%;
     }
     .searchBox input{
         padding: 10px 4px;
@@ -163,7 +163,7 @@
         align-items: center;
     }
     .profile .formGroup{
-        width: 80%;
+        width: 90%;
     }
     .profile .formGroup label {
         font-size: 14px;
