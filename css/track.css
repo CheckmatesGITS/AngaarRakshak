@@ -92,7 +92,7 @@
 }
 
 .track .trackContent .info{
-    flex-basis: 50%;
+    width: 50%;
 }
 
 .track .trackContent .info .trackDet{
@@ -110,7 +110,7 @@
 }
 
 .track .trackContent .map{
-    flex-basis: 50%;
+    width: 50%;
     height: 400px;
     text-align: center;
     /* background: #999; */
@@ -151,7 +151,7 @@
     padding: 2rem;
     background: rgba(0, 72, 77, 0.573);
     border-radius: 2em;
-    overflow-x: hidden;
+    overflow-x: auto;
     display: flex;
 }
 

@@ -1,12 +1,14 @@
 /* INDEX.HTML */
 @media screen and (max-width: 600px) and (min-width:500px) {
-    #home .container{
+    #home .container {
         width: 80% !important;
     }
+
     .login .rememberForgot {
         display: flex;
         flex-direction: column-reverse;
     }
+
     .signForm .tnc {
         display: flex;
         align-items: flex-start;
@@ -15,22 +17,26 @@
 }
 
 @media screen and (max-width: 500px) {
-    #home .container{
+    #home .container {
         width: 90%;
         padding: 1rem;
     }
+
     .container .formButton button {
         font-size: 15px;
     }
+
     .login .rememberForgot {
         display: flex;
         flex-direction: column-reverse;
     }
+
     .loginForm .inputBox input::placeholder,
-    .signForm .inputBox input::placeholder{
+    .signForm .inputBox input::placeholder {
         color: #000;
         font-size: 12px;
     }
+
     .signForm .tnc {
         display: flex;
         align-items: flex-start;
@@ -39,22 +45,29 @@
 }
 
 @media screen and (max-width: 768px) and (min-width: 600px) {
-    #home .container{
+    #home .container {
         width: 70%;
         padding: 1rem;
     }
 }
+
 /* INDEX.HTML ENDS HERE */
 
 /* SIDE MENU */
-@media screen and (max-width: 768px) {
+@media screen and (max-width:600px) {
     .sideMenu{
         width: 20%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .sideMenu {
         padding: 0 0.5rem;
     }
-    .mainContent{
+
+    .mainContent {
         width: 80%;
     }
+
     .sideMenu .menu li {
         padding: 25%;
     }
@@ -72,45 +85,55 @@
         padding: 5%;
     } */
 }
+
 /* SIDE MENU ENDS HERE */
 
 /* DASHBOARD.HTML */
 @media screen and (max-width: 768px) {
-    .mainContent .headerWrapper{
+    .mainContent .headerWrapper {
         padding: 10px;
         justify-content: center;
     }
-    .headerWrapper .userInfo{
+
+    .headerWrapper .userInfo {
         flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
     }
-    .userInfo .searchBox{
+
+    .userInfo .searchBox {
         padding: 4px 6px;
-        width: 90%;
+        width: 85%;
     }
-    .searchBox input{
+
+    .searchBox input {
         padding: 10px 4px;
     }
+
     .cardContainer .cardWrapper {
         display: flex;
         flex-direction: column;
     }
-    .mainContent .trainInfo{
+
+    .mainContent .trainInfo {
         padding: 10px;
     }
+
     .trainInfo .infoContainer {
         display: flex;
         flex-direction: column;
     }
+
     .trainInfo .trainForm {
         width: 80%;
     }
+
     .trainInfo .trainDet {
         width: 90%;
         padding: 10px;
     }
-    .trainDet .details{
+
+    .trainDet .details {
         font-size: 16px;
         padding: 10px;
         width: 100%;
@@ -119,19 +142,23 @@
         grid-template-columns: 7fr 3fr;
         gap: 4px;
     }
+
     .details .align:nth-child(1) {
         grid-column: 1 /span 2;
         grid-row: 1;
     }
+
     .details .seperator {
         grid-row: 2;
         grid-column: 1 /span 2;
     }
+
     .details .seperator+.align {
         grid-row: 3 /span 4;
         grid-column: 1;
         margin-left: 0;
     }
+
     .details .checkBtn {
         font-size: 16px;
         grid-row: 5;
@@ -139,21 +166,26 @@
     }
 }
 
+/* DASHBOARD ENDS HERE */
+
 /* PROFILE.HTML */
 @media screen and (max-width: 768px) {
-    .mainContent .profile{
+    .mainContent .profile {
         padding: 10px;
     }
+
     .profile .profileHeader {
         width: 90%;
         margin: 10px auto;
     }
+
     .profile .primary {
         margin: 1rem auto;
         flex-wrap: wrap;
         justify-content: center;
         gap: 1rem;
     }
+
     .primary .dp img {
         width: 50px;
         height: 50px;
@@ -162,10 +194,70 @@
     .profile form {
         align-items: center;
     }
-    .profile .formGroup{
-        width: 90%;
+
+    .profile .formGroup {
+        width: 80%;
     }
+
     .profile .formGroup label {
         font-size: 14px;
     }
 }
+
+/* PROFILE ENDS HERE */
+
+/* TRACK.HTML */
+@media screen and (max-width: 768px) {
+    .mainContent .track {
+        padding: 10px;
+    }
+
+    .track .trackHeader {
+        width: 100%;
+    }
+
+    .track .trackContent {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .track .trackContent .info {
+        width: 100%;
+    }
+
+    .track .trackContent .info .trackDet {
+        font-size: 12px;
+    }
+
+    .track .trackContent .map {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .trainStat{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width:500px) {
+    .sideMenu{
+        width: 15%;
+    }
+    .mainContent{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width:600px) {
+    .sideMenu{
+        width: 10%;
+    }
+    .mainContent{
+        width: 90%;
+    }
+}
+/* TRACK ENDS HERE */

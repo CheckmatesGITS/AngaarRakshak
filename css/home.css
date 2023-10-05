@@ -25,7 +25,7 @@
     background: #c7cdc97d;
     padding: 1rem 2rem;
     margin: 10vh 0;
-    width: 40%;
+    width: 50%;
     /* border: 4px solid #3c5750; */
     border: 4px solid #5aa1d6;
     border-radius: 2em;
@@ -125,6 +125,7 @@
 .login .rememberForgot{
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .login .rememberForgot a{
@@ -276,6 +277,17 @@
     transform: scale(1.01);
 }
 
+.signForm .tnc{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.signForm .tnc a{
+    color: #000;
+    font-weight: bold;
+}
+
 .signForm .tnc label{
     display: inline-flex;
     align-items: center;
@@ -283,12 +295,6 @@
 
 .signForm .tnc label input{
     margin-right: 10px;
-}
-
-.signForm .tnc label a{
-    margin-left: 10px;
-    color: #000;
-    font-weight: bold;
 }
 
 .tnc a{
