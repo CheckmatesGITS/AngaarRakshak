@@ -58,7 +58,21 @@
     .sideMenu .menu li {
         padding: 25%;
     }
+
+    /* :hover
+    .sideMenu:hover {
+        width: 200px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 2;
+    }
+    .sideMenu:hover .menu li {
+        padding: 5%;
+    } */
 }
+/* SIDE MENU ENDS HERE */
 
 /* DASHBOARD.HTML */
 @media screen and (max-width: 768px) {
@@ -122,5 +136,36 @@
         font-size: 16px;
         grid-row: 5;
         grid-column: 1 /span 2;
+    }
+}
+
+/* PROFILE.HTML */
+@media screen and (max-width: 768px) {
+    .mainContent .profile{
+        padding: 10px;
+    }
+    .profile .profileHeader {
+        width: 90%;
+        margin: 10px auto;
+    }
+    .profile .primary {
+        margin: 1rem auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .primary .dp img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .profile form {
+        align-items: center;
+    }
+    .profile .formGroup{
+        width: 90%;
+    }
+    .profile .formGroup label {
+        font-size: 14px;
     }
 }
