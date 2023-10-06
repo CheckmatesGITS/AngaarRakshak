@@ -3,7 +3,7 @@
 
 - 🔭 We are currently working on **Angaar Rakshak**
 
-- 🌱 Tech Stack We Use are **For Hardware : esp32 cam module Load cell etc. <br> And For Frontend : HTML, JavaScript <br> For Backend : Nodejs**
+- 🌱 Tech Stack We Use are **For Hardware : esp32 cam module Load cell etc. <br> And For Frontend : HTML, CSS, JavaScript <br> For Backend : Nodejs**
 
 <p align="left">
 </p>
