@@ -25,6 +25,16 @@
 
 .headerWrapper .headerTitle{
     color: #00214d;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.headerWrapper .headerTitle #menuBtn i{
+    font-size: 30px;
+    cursor: pointer;
 }
 
 .headerWrapper .userInfo{

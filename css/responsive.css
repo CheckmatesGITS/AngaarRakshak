@@ -54,18 +54,16 @@
 /* INDEX.HTML ENDS HERE */
 
 /* SIDE MENU */
-@media screen and (max-width:600px) {
-    .sideMenu{
-        width: 20%;
-    }
-}
 @media screen and (max-width: 768px) {
     .sideMenu {
         padding: 0 0.5rem;
+        transform: translateX(-200px);
+        width:200px;
+        position: fixed;
     }
 
     .mainContent {
-        width: 80%;
+        width: 100%;
     }
 
     .sideMenu .menu li {
@@ -85,8 +83,8 @@
         padding: 5%;
     } */
 }
-
 /* SIDE MENU ENDS HERE */
+
 
 /* DASHBOARD.HTML */
 @media screen and (max-width: 768px) {
@@ -99,6 +97,10 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
+    }
+
+    .headerWrapper .headerTitle{
+        justify-content: space-between;
     }
 
     .userInfo .searchBox {
@@ -165,8 +167,8 @@
         grid-column: 1 /span 2;
     }
 }
-
 /* DASHBOARD ENDS HERE */
+
 
 /* PROFILE.HTML */
 @media screen and (max-width: 768px) {
@@ -203,8 +205,8 @@
         font-size: 14px;
     }
 }
-
 /* PROFILE ENDS HERE */
+
 
 /* TRACK.HTML */
 @media screen and (max-width: 768px) {
@@ -242,22 +244,20 @@
         display: none;
     }
 }
-
-@media screen and (max-width: 600px) and (min-width:500px) {
-    .sideMenu{
-        width: 15%;
-    }
-    .mainContent{
-        width: 85%;
-    }
-}
-
-@media screen and (max-width: 768px) and (min-width:600px) {
-    .sideMenu{
-        width: 10%;
-    }
-    .mainContent{
-        width: 90%;
-    }
-}
 /* TRACK ENDS HERE */
+
+
+/* ALERT.HTML */
+@media screen and (max-width:600px ) {
+    .box .boxContent .alertBox{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    .box .boxContent .alertBox .msg{
+        text-align: center;
+    }
+}
+/* ALERT ENDS HERE */
