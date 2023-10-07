@@ -25,6 +25,9 @@ function myFunction(x) {
   }
   else {
     menuBtn.innerHTML = ``;
+    closeBtn.innerHTML = ``;
+    menu.style.cssText = `transform:translateX(0);
+                          width:100px`;
   }
 }
 

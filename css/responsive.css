@@ -57,8 +57,8 @@
 @media screen and (max-width: 768px) {
     .sideMenu {
         padding: 0 0.5rem;
-        transform: translateX(-200px);
-        width:200px;
+        transform: translateX(-250px);
+        width:250px !important;
         position: fixed;
     }
 
@@ -86,32 +86,42 @@
 /* SIDE MENU ENDS HERE */
 
 
-/* DASHBOARD.HTML */
+/* Head Bar */
 @media screen and (max-width: 768px) {
     .mainContent .headerWrapper {
         padding: 10px;
         justify-content: center;
-    }
-
-    .headerWrapper .userInfo {
         flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
     }
 
     .headerWrapper .headerTitle{
         justify-content: space-between;
     }
 
+    .headerWrapper .headerTitle{
+        justify-content: space-between;
+    }
+    
+    .headerWrapper .userInfo {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
     .userInfo .searchBox {
         padding: 4px 6px;
-        width: 85%;
+        /* width: 85%; */
     }
 
     .searchBox input {
         padding: 10px 4px;
     }
+}
+/* HEAD BAR ENDS HERE */
 
+
+/* DASHBOARD.HTML */
+@media screen and (max-width: 768px) {
     .cardContainer .cardWrapper {
         display: flex;
         flex-direction: column;
